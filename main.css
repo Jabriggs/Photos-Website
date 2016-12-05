@@ -1,0 +1,100 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url("dock.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#MainBar {
+    background-color: white;
+    border: 2px solid black;
+}
+
+#MainBar header {
+    font-size: 70px;
+    font-family: "Brush Script MT", Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: inline-block;
+}
+
+#icon {
+    display: inline-block;
+    width: 400px;
+    padding: 20px 0px 20px 0px;
+}
+
+#MenuBtn {
+    font-size:30px;
+    cursor:pointer;
+    background: rgba(255,255,255,0.6);
+    color: black;
+    padding: 5px 110px 2px 30px;
+}
+
+#ThemeBtn {
+    font-size:30px;
+    cursor:pointer;
+    float:right;
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+}
+
+.sidenav {
+    background: rgba(255,255,255,0.6);
+    height: 500px;
+    width: 250px;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: cyan;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    color: black;
+    top: 0;
+    right: 25px;
+    padding: 0px;
+    font-size: 40px;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 18px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+#media {
+    display: inline-block;
+    padding-left: 100px;
+}

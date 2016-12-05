@@ -1,0 +1,103 @@
+body {
+    background: url("dock.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#MainBar {
+    background-color: white;
+}
+
+#icon {
+    margin: auto;
+    width: 400px;
+    padding: 10px 0px 10px 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px 15px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#contact {
+    position: relative;
+    top: -10px;
+    background-color: cyan;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	height: 40px;
+}
+
+h1 {
+    font-family: Lobster;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+form {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+p {
+    font-family: Verdana, Arial, sans-serif;
+    display: inline-block;
+}
+
+input {
+    font-family: Verdana, Arial, sans-serif;
+    color: #777;
+}
+
+textarea {
+	vertical-align: top;
+	width: 400px;
+	color: #777;
+}
+
+#wrapper {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    position: relative;
+    top: -10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 3px #444;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8em;
+    background-color: white;
+}
+
+#inputs {
+	width: 200px;
+	clear: both;
+}
+
+#inputs input {
+	width: 100%;
+	clear: both;
+}

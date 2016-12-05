@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Gallery</title>
+		<link href="style/gallery.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div id="MainBar">
+			<p style="text-align:center;"><img id="icon" src="style/icon2.png"/></p>
+		</div>
+
+		<ul>
+  			<li><a href="main.html">Home</a></li>
+  			<li><a href="projects.html">Projects</a></li>
+  			<li><a href="about.html">About</a></li>
+  			<li style="float:right"><a class="active" href="contact.html">Contact</a></li>
+		</ul>
+		<br><br>
+		<span id="MenuBtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Picture Info</span>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  			<p class="info">Random stuff about this picture like where and when it was taken and stuff like that.
+  			<br><br>
+  			Maybe something else down here? I don't know. Might be nice.</p>
+		</div>
+
+		<div class="photos" style="max-width:900px;position:absolute; top: 220px; left: 650px;">
+			<img class="mySlides" src="photos/33079.jpg" style="width:100%">
+			<img class="mySlides" src="photos/74453.jpg" style="width:100%">
+			<img class="mySlides" src="photos/338596.jpg" style="width:100%">
+			<img class="mySlides" src="photos/595523.jpg" style="width:100%">
+
+			<a class="picBtn" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">&#10094;</a>
+			<a class="picBtn" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">&#10095;</a>
+
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+  				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+  				var i;
+  				var x = document.getElementsByClassName("mySlides");
+  				if (n > x.length) {slideIndex = 1}
+  				if (n < 1) {slideIndex = x.length}
+  				for (i = 0; i < x.length; i++) {
+     				x[i].style.display = "none";
+  				}
+  				x[slideIndex-1].style.display = "block";
+			}
+		</script>
+
+		<script>
+			function openNav() {
+    			document.getElementById("mySidenav").style.width = "350px";
+    			document.getElementById("MenuBtn").style.paddingLeft = "30px";
+    			document.getElementById("MenuBtn").style.paddingRight = "143px";
+			}
+
+			function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+    			document.getElementById("MenuBtn").style.paddingLeft = "10px";
+    			document.getElementById("MenuBtn").style.paddingRight = "20px";
+			}
+		</script>
+     
+	</body>
+	
+</html>
+

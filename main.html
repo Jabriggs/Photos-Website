@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Jason Briggs Photography</title>
+		<link href="style/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	</head>
+
+	<body>
+
+		<div id="MainBar">
+			<p style="text-align:center;"><img id="icon" src="style/icon2.png"/></p>
+		</div>
+
+		<span id="MenuBtn" onclick="openNav()">&#9776; Menu</span>
+		<span id="ThemeBtn" onclick="changeTheme(0)">Change Theme</span>
+
+		<div id="mySidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  			<br>
+  			<a id="MenuInfo1" href="gallery.html">&#8709; Gallery</a>
+  			<a id="MenuInfo2" href="projects.html">&#8709; Projects</a>
+  			<a id="MenuInfo3" href="about.html">&#8709; About</a>
+  			<a id="MenuInfo4" href="contact.html">&#8709; Contact</a>
+		</div>
+
+		<div class="footer" id="footer">
+   			<p>&copy; 2016 Jason Briggs - Photography</p>
+   			<p id="media">Social Media icon1 icon2 etc</p>
+ 		</div>
+
+ 		<script type="text/javascript">
+ 			function changeTheme(x) {
+ 				if (x === 0) {
+ 					document.getElementById("MainBar").style.backgroundColor = "#595959";
+ 					document.getElementById("MenuBtn").style.backgroundColor = "rgba(0,0,0,0.6)";
+	 				document.getElementById("MenuBtn").style.color = "white";
+	 				document.getElementById("mySidenav").style.backgroundColor = "rgba(0,0,0,0.6)";
+	 				document.getElementById("MenuInfo1").style.color = "white";
+	 				document.getElementById("MenuInfo2").style.color = "white";
+	 				document.getElementById("MenuInfo3").style.color = "white";
+	 				document.getElementById("MenuInfo4").style.color = "white";
+	 				document.getElementById("footer").style.backgroundColor = "rgba(0,0,0,0.6)";
+	 				document.getElementById("footer").style.color = "white";
+	 				document.getElementById("ThemeBtn").style.backgroundColor = "rgba(0,0,0,0.6)";
+	 				document.getElementById("ThemeBtn").style.color = "white";
+	 			}
+	 			if (x === 1) {
+ 					document.getElementById("MainBar").style.backgroundColor = "white";
+ 					document.getElementById("MenuBtn").style.backgroundColor = "rgba(255,255,255,0.6)";
+	 				document.getElementById("MenuBtn").style.color = "black";
+	 				document.getElementById("mySidenav").style.backgroundColor = "rgba(255,255,255,0.6)";
+	 				document.getElementById("MenuInfo1").style.color = "black";
+	 				document.getElementById("MenuInfo2").style.color = "black";
+	 				document.getElementById("MenuInfo3").style.color = "black";
+	 				document.getElementById("MenuInfo4").style.color = "black";
+	 				document.getElementById("footer").style.backgroundColor = "rgba(255,255,255,0.6)";
+	 				document.getElementById("footer").style.color = "black";
+	 				document.getElementById("ThemeBtn").style.backgroundColor = "rgba(255,255,255,0.6)";
+	 				document.getElementById("ThemeBtn").style.color = "black";
+	 			}
+ 			}
+ 		</script>
+
+		<script>
+			function openNav() {
+    			document.getElementById("mySidenav").style.width = "250px";
+    			document.getElementById("MenuBtn").style.paddingLeft = "30px";
+    			document.getElementById("MenuBtn").style.paddingRight = "110px";
+			}
+
+			function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+    			document.getElementById("MenuBtn").style.paddingLeft = "10px";
+    			document.getElementById("MenuBtn").style.paddingRight = "20px";
+			}
+		</script>
+     
+	</body>
+
+</html>
+
